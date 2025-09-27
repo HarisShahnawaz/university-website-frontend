@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My University Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Correct Font Awesome CDN link (no nesting) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+
+      <!-- toggle button (visible) -->
+      <i class="fa-solid fa-bars" onclick="Showmanu()"></i>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="Hidemanu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p>
+        The world's largest university by student enrollment is the Harvard university in Cambridge, Massachusetts
+        with over 3 million students.
+      </p>
+      <a href="" class="hero-btn">Visit us to know more</a>
+    </div>
+  </section>
+
+  <!-- course -->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Our university provides a wide range of undergraduate and postgraduate programs designed to prepare students for professional success.</p>
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>We offer a variety of Intermediate programs that provide a strong academic foundation for higher education.Students can choose from Pre-Medical, Pre-Engineering, ICS (Computer Science).</p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>Our graduates are well-prepared with practical skills, research exposure, and industry knowledge, making them highly competitive in the job market.</p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Our post-graduate degrees (MS/MPhil/PhD) are designed to provide advanced knowledge, research expertise, and professional specialization.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- campus -->
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Our global campus is more than just a place to study—it is a community that inspires innovation, leadership, and lifelong connections.</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/london.png" alt="London">
+        <div class="layer"><h3>LONDON</h3></div>
+      </div>
+      <div class="campus-col">
+        <img src="images/newyork.png" alt="New York">
+        <div class="layer"><h3>NEW YORK</h3></div>
+      </div>
+      <div class="campus-col">
+        <img src="images/washington.png" alt="Washington">
+        <div class="layer"><h3>WASHINGTON</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- facilities -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our facilities include a well-stocked library, a modern cafeteria, and spacious playgrounds for sports and recreation.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/library.png" alt="">
+        <h3>World Class Library</h3>
+        <p>Our library provides a rich collection of books, journals, and digital resources, creating a perfect environment for research and study.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/basketball.png" alt="">
+        <h3>Largest Play Ground</h3>
+        <p>With wide and well-maintained playgrounds, students enjoy opportunities for sports, fitness, and recreational activities that promote a balanced lifestyle.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/cafeteria.png" alt="">
+        <h3>Tasty And Healthy Food</h3>
+        <p>A spacious and hygienic cafeteria offers a variety of healthy and delicious meals, making it a favorite spot for students to relax and socialize</p>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials -->
+  <section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>he supportive faculty and modern facilities have made my learning journey truly amazing</p>
+    <div class="row">
+      <div class="testimonials-col">
+        <img src="images/user1.jpg" alt="">
+        <div>
+          <p>The campus environment is friendly and motivating, helping me grow academically and personally</p>
+          <h3>Arya Stark</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+
+      <div class="testimonials-col">
+        <img src="images/user2.jpg" alt="">
+        <div>
+          <p>This university not only provides quality education but also prepares us for real-world challenges</p>
+          <h3>Tom Banton</h3>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h1>Enroll for Our Various Courses <br>Anywhere From the World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+  </section>
+
+  <!-- footer -->
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Our university is dedicated to providing quality education, innovation, and research opportunities that prepare students for a successful future.</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by Haris coding</p>
+  </section>
+
+  <!-- javascript for toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function Showmanu(){ navLinks.style.right = "0"; }
+    function Hidemanu(){ navLinks.style.right = "-200px"; }
+  </script>
+</body>
+</html>
