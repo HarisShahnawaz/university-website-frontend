@@ -288,7 +288,7 @@ nav img{
     width: 56px;
     height: 56px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 49%;
 }
 .testimonials-col p{ padding: 0; }
 .testimonials-col h3{ margin-top: 12px ; text-align: left; }
