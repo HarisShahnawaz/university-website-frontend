@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My University Website</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header class="sub-header">
+    <nav>
+      <a href="index.html" class="logo-link"><img src="images/logo.png" alt="logo"></a>
+
+      <!-- toggle button (hamburger) for mobile -->
+      <i class="fa-solid fa-bars menu-icon" aria-hidden="true" id="menuBtn" title="Open menu"></i>
+
+      <div class="nav-links" id="navLinks" role="navigation" aria-label="Main Navigation">
+        <i class="fa-solid fa-xmark close-icon" aria-hidden="true" id="closeBtn" title="Close menu"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">COURSE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Our Certificate & Online Programs for 2026</h1>
+  </header>
+
+  <!-- --------------------blog page content---------------- -->
+
+  <section class="blog-content">
+  <div class="row">
+    <div class="blog-left">
+    <img src="images/certificate.jpg" >
+    <h2>Our Certificate & Online Programs for 2026</h2>
+    <p>My university is more than just an educational institution;
+       it is a place where ideas grow, talents are discovered, and futures
+        are shaped. From the moment I entered the campus, I felt an environment
+         that encourages learning, creativity, and personal development. The university
+          provides students with not only academic knowledge but also the confidence and
+           skills needed to succeed in real life.</p>
+           <br>
+    <p>One of the strongest aspects of my university is its commitment to quality education.
+      The faculty members are highly qualified, supportive, and always willing to guide students. 
+      Modern teaching methods, well-structured courses, and updated curricula ensure that students
+       remain aligned with current industry and academic standards.
+       This focus on excellence helps students build a strong foundation in their respective fields.</p>
+       <br>
+      <p>The campus life at my university is vibrant and engaging. 
+        With well-maintained classrooms, libraries, computer labs, and recreational areas,
+         students enjoy a balanced academic experience. Various societies, clubs, and extracurricular
+          activities provide opportunities to develop leadership skills,
+         teamwork, and creativity, making student life both productive and enjoyable.</p>
+         <br>
+         <p>Another important feature of my university is the emphasis on personal and professional growth. 
+          Workshops, seminars, internships, and career counseling sessions prepare students for future 
+          challenges. The university encourages innovation, research, 
+          and practical learning, helping students transform their ideas into reality.</p>
+
+
+
+        <div class="comment-box">
+          <h3>leave A Comment</h3>
+          <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Email">
+
+          </form>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="blog-right">
+   <h3> <pre>                        Post Categories </pre></h3>
+     <div>
+      <span>Business Analytics</span>
+      <span>21</span>
+     </div>
+     <div>
+      <span>Artificial Intelligence</span>
+      <span>31</span>
+     </div>
+     <div>
+      <span>Physics</span>
+      <span>88</span>
+     </div>
+     <div>
+      <span>Machine learning</span>
+      <span>17</span>
+     </div>
+     <div>
+      <span>Computer Science</span>
+      <span>46</span>
+     </div>
+      <div>
+      <span>AutoCAD</span>
+      <span>66</span>
+     </div>
+      <div>
+      <span>Machanics</span>
+      <span>77</span>
+     </div>
+    </div>
+
+  </div>
+  </section>
+ 
+  <!-- footer -->
+  <footer class="footer">
+    <h4>About Us</h4>
+    <p>Our university is dedicated to providing quality education, innovation, and research opportunities that prepare students for a successful future.</p>
+    <div class="icons" aria-hidden="true">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by Haris coding</p>
+  </footer>
+
+  <!-- javascript for toggle menu -->
+  <script>
+    (function () {
+      const navLinks = document.getElementById("navLinks");
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      function openMenu() {
+        navLinks.classList.add('active');
+      }
+      function closeMenu() {
+        navLinks.classList.remove('active');
+      }
+
+      menuBtn.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+
+      // reset on desktop resize
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 768) {
+          navLinks.classList.remove('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
