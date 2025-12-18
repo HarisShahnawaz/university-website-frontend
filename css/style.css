@@ -12,15 +12,17 @@
 }
 
 /* Header / hero */
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(images/banner.png);
+    /* Added quotes and checked comma placement */
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)), url("images/banner.png");
     background-position: center;
     background-size: cover;
     position: relative;
     color: #fff;
 }
+
 nav{
     max-width: var(--container-width);
     margin: 0 auto;
@@ -295,10 +297,11 @@ nav img{
 .testimonials-col .fa{ color: gold; }
 
 /* CTA */
-.cta{
+.cta {
     max-width: var(--container-width);
     margin: 4rem auto;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/banner2.jpg);
+    /* Added quotes and checked comma placement */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("images/banner2.jpg");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
